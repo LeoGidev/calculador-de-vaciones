@@ -39,3 +39,5 @@ def calcular_vacaciones():
 ventana = Tk()
 ventana.title("Calculadora de Vacaciones")
 ventana.geometry("400x300")
+
+# Etiqueta y calendario para seleccionar la fecha de ingreso
