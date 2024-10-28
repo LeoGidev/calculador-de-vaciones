@@ -37,3 +37,4 @@ def calcular_vacaciones():
 
 # Crear la ventana principal
 ventana = Tk()
+ventana.title("Calculadora de Vacaciones")
