@@ -15,3 +15,13 @@ def calcular_vacaciones():
     # Determinar los días de vacaciones según la antigüedad
     if antiguedad_dias < 183:  # Menor a 6 meses
         if antiguedad_dias < 4 * 7:
+            dias_vacaciones = 1
+        elif antiguedad_dias < 8 * 7:
+            dias_vacaciones = 2
+        elif antiguedad_dias < 12 * 7:
+            dias_vacaciones = 3
+        elif antiguedad_dias < 16 * 7:
+            dias_vacaciones = 4
+        elif antiguedad_dias < 20 * 7:
+            dias_vacaciones = 5
+
