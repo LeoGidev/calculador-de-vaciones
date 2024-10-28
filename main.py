@@ -44,3 +44,6 @@ ventana.geometry("400x300")
 Label(ventana, text="Seleccione su fecha de ingreso:").pack(pady=10)
 calendario = DateEntry(ventana, width=12, background='darkblue', foreground='white', borderwidth=2, date_pattern='yyyy-mm-dd')
 calendario.pack(pady=10)
+
+# Botón para calcular
+Button(ventana, text="Calcular vacaciones", command=calcular_vacaciones).pack(pady=20)
