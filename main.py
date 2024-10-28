@@ -24,4 +24,12 @@ def calcular_vacaciones():
             dias_vacaciones = 4
         elif antiguedad_dias < 20 * 7:
             dias_vacaciones = 5
+    elif antiguedad_anios < 5:
+        dias_vacaciones = 14
+    elif antiguedad_anios < 10:
+        dias_vacaciones = 21
+    elif antiguedad_anios < 20:
+        dias_vacaciones = 28
+    else:
+        dias_vacaciones = 35
 
