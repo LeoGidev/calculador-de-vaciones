@@ -8,3 +8,4 @@ def calcular_vacaciones():
     hoy = datetime.date.today()
     fin_anio = datetime.date(hoy.year, 12, 31)
     # Calcular antigüedad en días y años
+    antiguedad_dias = (fin_anio - fecha_ingreso).days
