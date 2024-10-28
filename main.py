@@ -7,11 +7,11 @@ def calcular_vacaciones():
     fecha_ingreso = calendario.get_date()
     hoy = datetime.date.today()
     fin_anio = datetime.date(hoy.year, 12, 31)
+    
     # Calcular antigüedad en días y años
     antiguedad_dias = (fin_anio - fecha_ingreso).days
     antiguedad_anios = antiguedad_dias // 365
     
-    # Determinar los días de vacaciones según la antigüedad
     # Determinar los días de vacaciones según la antigüedad
     if antiguedad_dias < 183:  # Menor a 6 meses
         if antiguedad_dias < 4 * 7:
@@ -32,6 +32,7 @@ def calcular_vacaciones():
         dias_vacaciones = 28
     else:
         dias_vacaciones = 35
+
     # Mostrar el resultado
     resultado_label.config(text=f"Antigüedad: {antiguedad_anios} años\nDías de vacaciones: {dias_vacaciones}")
 
@@ -47,3 +48,9 @@ calendario.pack(pady=10)
 
 # Botón para calcular
 Button(ventana, text="Calcular vacaciones", command=calcular_vacaciones).pack(pady=20)
+
+# Etiqueta para mostrar el resultado
+resultado_label = Label(ventana, text="", font=("Arial", 12), fg="green")
+resultado_label.pack(pady=10)
+
+ventana.mainloop()
