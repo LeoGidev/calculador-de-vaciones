@@ -35,3 +35,5 @@ def calcular_vacaciones():
     # Mostrar el resultado
     resultado_label.config(text=f"Antigüedad: {antiguedad_anios} años\nDías de vacaciones: {dias_vacaciones}")
 
+# Crear la ventana principal
+
