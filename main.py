@@ -41,3 +41,4 @@ ventana.title("Calculadora de Vacaciones")
 ventana.geometry("400x300")
 
 # Etiqueta y calendario para seleccionar la fecha de ingreso
+Label(ventana, text="Seleccione su fecha de ingreso:").pack(pady=10)
