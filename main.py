@@ -42,3 +42,5 @@ ventana.geometry("400x300")
 
 # Etiqueta y calendario para seleccionar la fecha de ingreso
 Label(ventana, text="Seleccione su fecha de ingreso:").pack(pady=10)
+calendario = DateEntry(ventana, width=12, background='darkblue', foreground='white', borderwidth=2, date_pattern='yyyy-mm-dd')
+calendario.pack(pady=10)
