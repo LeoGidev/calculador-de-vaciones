@@ -12,3 +12,6 @@ def calcular_vacaciones():
     antiguedad_anios = antiguedad_dias // 365
     
     # Determinar los días de vacaciones según la antigüedad
+    # Determinar los días de vacaciones según la antigüedad
+    if antiguedad_dias < 183:  # Menor a 6 meses
+        if antiguedad_dias < 4 * 7:
