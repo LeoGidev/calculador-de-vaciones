@@ -32,4 +32,4 @@ def calcular_vacaciones():
         dias_vacaciones = 28
     else:
         dias_vacaciones = 35
-
+    # Mostrar el resultado
